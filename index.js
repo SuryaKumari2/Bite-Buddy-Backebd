@@ -27,6 +27,6 @@ app.use('/uploads', express.static('uploads'));
 app.listen(port,()=>{
     console.group('server running on the port 4000')
 })
-app.use('/home',(req,res)=>{
+app.use('/',(req,res)=>{
     res.send('<h1>Welcome to BiteBuddy')
 })
